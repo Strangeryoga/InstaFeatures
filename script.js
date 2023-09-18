@@ -140,3 +140,36 @@ c3.addEventListener("dblclick",function(){
     icon3.style.transform='translate(-50%,-50%) scale(0)';
   }, 2000);
 })
+
+var arr=[
+  {dp: "https://images.unsplash.com/photo-1650389176833-8dbb23d0d8f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+   ,story: "https://images.unsplash.com/photo-1650389176833-8dbb23d0d8f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"},
+  {dp: "https://images.unsplash.com/photo-1693336428994-c8bb3bdad0d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" ,
+  story: "https://images.unsplash.com/photo-1693336428994-c8bb3bdad0d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" },
+  {dp: "https://images.unsplash.com/photo-1693074445833-0fdce5f1f29f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" ,
+  story: "https://images.unsplash.com/photo-1693074445833-0fdce5f1f29f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" },
+  {dp: "https://images.unsplash.com/photo-1692180024031-4882297c4734?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+  story: "https://images.unsplash.com/photo-1692180024031-4882297c4734?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" },
+]
+
+var pic=document.querySelector("#storiyan")
+var clutter=""
+arr.forEach(function(elm,ind){
+  clutter+=` <div class="story">
+  <img id="${ind}" src=${elm.dp} alt="">
+</div>`
+})
+
+pic.innerHTML =clutter
+
+pic.addEventListener("click",function(a){
+
+  document.querySelector("#full-screen").style.display="block";
+  document.querySelector("#full-screen").style.
+  backgroundImage=`url(${arr[a.target.id].story})`
+
+  setTimeout(() => {
+    document.querySelector("#full-screen").style.display="none";
+
+  }, 3000);
+});

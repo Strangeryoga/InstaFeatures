@@ -34,7 +34,7 @@ body{
 .card{
     height: 350px;
     width: 300px;
-    background-color: #fff;
+    background-color: #8d6885;;
     border-radius: 10px;
     position: absolute;
     margin-right: 72%;
@@ -104,7 +104,7 @@ body{
 
     height: 350px;
     width: 300px;
-    background-color: #fff;
+    background-color: #89806a;
     border-radius: 10px;
     position: absolute;
     margin-left: 70%;
@@ -274,3 +274,58 @@ body{
 }
 
 /* container 3 ends here */
+
+/* story feat starts here */
+
+#card1{
+    height: 630px;
+    width: 303px;
+    background-color: transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 1.5%;
+    
+}
+
+#storiyan{
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    border: 3px solid red;
+    height: 90px;
+    border-radius: 50%;
+    width: 90px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    background-size: cover;
+    background-position: center ;
+   
+}
+
+/* story feat ends here
