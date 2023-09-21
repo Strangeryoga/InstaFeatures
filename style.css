@@ -92,7 +92,6 @@ body{
     z-index: 9;
 
 }
-
 /* card 1 ends here */
 
 
@@ -162,15 +161,32 @@ body{
     position: relative;
     z-index: 9;
 }
-
 /* card2 ends here */
 
 /* container starts here */
+h4{
+    padding-top: 11px;
+    padding-left: 40px;
+    padding-bottom: 14px;
+    margin-left: 4px;
+}
+
+.c1profile{
+    /* border: 1px solid red; */
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    overflow: hidden;
+    position: absolute;
+   
+
+}
+
 
 .container{
     height: 500px;
     width: 300px;
-    background-color: rgb(229, 138, 138);
+    background-color: transparent;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -197,19 +213,34 @@ body{
 .container #love{
     color: #fff;
 }
-
-
-
 /* container ends here */
 
 
 /* container 2 starts here */
+h4{
+    padding-top: 11px;
+    padding-left: 40px;
+    padding-bottom: 14px;
+    margin-left: 4px;
+}
+
+
+.c2profile{
+    /* border: 1px solid red; */
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    overflow: hidden;
+    position: absolute;
+   
+}
+
 
 
 .container2{
     height: 500px;
     width: 300px;
-    background-color: rgb(229, 138, 138);
+    /* background-color: rgb(229, 138, 138); */
     border-radius: 10px;
    position: absolute;
     overflow: hidden;
@@ -233,21 +264,32 @@ body{
     opacity: 0;
     transition: transform ease 0.5s;
 }
-
-
-
-
-
-
-
 /* container 2 ends here */
 
 /* container 3 starts here */
+h4{
+    padding-top: 11px;
+    padding-left: 40px;
+    padding-bottom: 14px;
+    margin-left: 4px;
+}
+
+.c3profile{
+    /* border: 1px solid red; */
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    overflow: hidden;
+    position: absolute;
+   
+
+}
+
 
 .container3{
     height: 500px;
     width: 300px;
-    background-color: rgb(229, 138, 138);
+    /* background-color: rgb(229, 138, 138); */
     border-radius: 10px;
     position: absolute;
     overflow: hidden;
@@ -272,11 +314,9 @@ body{
     opacity: 0;
     transition: transform ease 0.5s;
 }
-
 /* container 3 ends here */
 
 /* story feat starts here */
-
 #card1{
     height: 630px;
     width: 303px;
@@ -327,5 +367,4 @@ body{
     background-position: center ;
    
 }
-
 /* story feat ends here
