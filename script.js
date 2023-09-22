@@ -69,6 +69,22 @@ c1.addEventListener("dblclick",function(){
 //container ends here
 
 
+//container like btn starts here 
+var l1=document.querySelector(".wrapper")
+var i1=document.querySelector(".icon")
+var flag2=0
+l1.addEventListener("click",function(){
+  if(flag2==0){
+    i1.style.color= "red";
+    flag2=1
+  }else{
+    i1.style.color= "white";
+    flag2=0 
+  }
+})
+//container like btn ends here
+
+
 //card image hover starts here
 var elem1=document.querySelector(".card");
 var elemImage=document.querySelector(".card .image2");
@@ -103,6 +119,22 @@ c2.addEventListener("dblclick",function(){
   }, 2000);
 })
 //container 2 ends here
+
+
+//container2 like btn starts here 
+var l2=document.querySelector(".wrapper2")
+var i2=document.querySelector(".icon2")
+var flag3=0
+l2.addEventListener("click",function(){
+  if(flag3==0){
+    i2.style.color= "red";
+    flag3=1
+  }else{
+    i2.style.color= "white";
+    flag3=0 
+  }
+})
+//container2 like btn ends here
 
 
 //card 2 image hover starts here
@@ -141,6 +173,22 @@ c3.addEventListener("dblclick",function(){
   }, 2000);
 })
 //container 3 ends here
+
+
+//container2 like btn starts here 
+var l3=document.querySelector(".wrapper3")
+var i3=document.querySelector(".icon3")
+var flag4=0
+l3.addEventListener("click",function(){
+  if(flag4==0){
+    i3.style.color= "red";
+    flag4=1
+  }else{
+    i3.style.color= "white";
+    flag4=0 
+  }
+})
+//container2 like btn ends here
 
 
 //card1(story) starts here

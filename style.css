@@ -25,7 +25,7 @@ body{
     border-radius: 50%;
     position: fixed;
     z-index: 99;
-    transform: all linear 0.1s;
+    transform: all linear 0.16s;
 }
 
 
@@ -163,6 +163,7 @@ body{
 }
 /* card2 ends here */
 
+
 /* container starts here */
 h4{
     padding-top: 11px;
@@ -215,6 +216,29 @@ h4{
 }
 /* container ends here */
 
+/* container like btn starts here */
+.wrapper{
+    position: absolute;
+    bottom: 105px;
+    left: 623px;
+}
+
+.icon{
+    margin-top: 61px;
+    font-size: 20px;
+    color: #f3f3f3;
+    cursor: pointer;
+    text-shadow: 5px 8px 15px #080909;
+    transition: .5s;
+  }
+
+  .icon:hover{
+    color: #ba0015;
+    transform: scale(1.2);
+  }
+
+/* container like btn ends here
+
 
 /* container 2 starts here */
 h4{
@@ -266,6 +290,28 @@ h4{
 }
 /* container 2 ends here */
 
+
+.wrapper2{
+    position: absolute;
+    top: 153%;
+    left: 40.5%;
+}
+
+.icon2{
+    margin-top: 61px;
+    font-size: 20px;
+    color: #f3f3f3;
+    cursor: pointer;
+    text-shadow: 5px 8px 15px #080909;
+    transition: .5s;
+  }
+
+  .icon2:hover{
+    color: #ba0015;
+    transform: scale(1.2);
+  }
+
+
 /* container 3 starts here */
 h4{
     padding-top: 11px;
@@ -294,6 +340,7 @@ h4{
     position: absolute;
     overflow: hidden;
     top: 172%;
+    margin-bottom: 2px;
 }
 
 
@@ -316,6 +363,33 @@ h4{
 }
 /* container 3 ends here */
 
+
+.wrapper3{
+    position: absolute;
+   /* border: 2px solid black; */
+    height: 10%;
+    width: 34%;
+    top:236%;
+}
+
+.icon3{
+    position: absolute;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #f3f3f3;
+    cursor: pointer;
+    text-shadow: 5px 8px 15px #080909;
+    transition: .5s;
+    left: 115px;
+    margin-top: 14px;
+  }
+
+  .icon3:hover{
+    color: #ba0015;
+    transform: scale(1.2);
+  }
+
+  
 /* story feat starts here */
 #card1{
     height: 630px;
