@@ -14,7 +14,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(106, 106, 199);
+    background-color: rgb(139, 127, 127);
 }
 
 .cursor{
@@ -372,6 +372,14 @@ h4{
     top:236%;
 }
 
+.space{
+    border: transparent;
+    position: absolute;
+    top: 243%;
+    height: 8%;
+    width: 59%;
+}
+
 .icon3{
     position: absolute;
     margin-top: 10px;
@@ -441,4 +449,78 @@ h4{
     background-position: center ;
    
 }
-/* story feat ends here
+/* story feat ends here*/
+
+
+/* mobile view starts here */
+@media (max-width:600px) {
+  .card{
+    display: none;
+  }
+  
+  .card2{
+    display: none;
+  }
+
+  .container{
+    height: 500px;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+  .wrapper{
+    position: absolute;
+    bottom: 98px;
+    left: 38px;
+    z-index: 1;
+}
+.wrapper2{
+    position: absolute;
+    top: 154%;
+    left: 10.5%;
+}
+
+.wrapper3{
+    position: absolute;
+   /* border: 2px solid black; */
+    height: 10%;
+    width: 34%;
+    top:237%;
+    right: 88%;
+    margin-bottom: 2px;
+}
+
+#card1{
+    height: 725px;
+    width: 365px;
+    background-color: transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 1.5%;
+    margin-top: -17px;
+    
+}
+
+
+#storiyan{
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+
+
+
+
+}
+/* mobile view ends here */
