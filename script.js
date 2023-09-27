@@ -227,7 +227,7 @@ pic.addEventListener("click",function(a){
   setTimeout(() => {
     document.querySelector(".container").style.zIndex=1;
     document.querySelector(".wrapper").style.zIndex=1;
-  }, 3000);
+  }, 12000);
  
 });
 //story ends here
