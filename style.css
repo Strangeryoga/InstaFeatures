@@ -482,13 +482,13 @@ h4{
   .wrapper{
     position: absolute;
     bottom: 98px;
-    left: 42px;
+    left: 50px;
     z-index: 1;
 }
 .wrapper2{
     position: absolute;
     top: 154%;
-    left: 12.5%;
+    left: 15.5%;
 }
 
 .wrapper3{
@@ -497,7 +497,7 @@ h4{
     height: 10%;
     width: 34%;
     top:237%;
-    right: 86%;
+    right: 80%;
     margin-bottom: 2px;
 }
 
