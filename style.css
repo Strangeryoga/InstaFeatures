@@ -14,10 +14,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(139, 127, 127);
+    /* background-color: rgb(139, 127, 127); */
+    background-color: #111;
 }
 
 .cursor{
+    display: none;
     height: 40px;
     width: 40px;
     background-color: #111;
@@ -28,10 +30,98 @@ body{
     transform: all linear 0.16s;
 }
 
+/* sidebar starts here */
 
+.sidebar {
+    top: 30px;
+    left: 25px;
+    border-right: 1px solid #fff;
+    padding-top: 50px;
+    padding-right: 70px;
+    padding-bottom: 42%;
+    position: fixed;
+    margin-top: -30px;
+}
+
+.sidebar .title {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+
+.sidebar .title h1 {
+    font-size: 140%;
+}
+
+
+.sidebar ul li {
+    list-style-type: none;
+    height: 50px;
+    width: 130%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+    margin-left: -13px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+}
+
+.sidebar ul li a:hover {
+    background-color: #767373;
+    color: #fff;
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.sidebar ul li a span {
+    font-size: 18px;
+}
+
+.sidebar ul #proflie {
+    display: flex;
+}
+
+#proflie a span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.sidebar ul li img {
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 8px;
+    
+}
+
+.sidebar ul #thread {
+    padding-top: 130%;
+}
+
+.sidebar ul #more {
+    padding-top: 40px;
+}
+
+/* sidebar ends here */
 
 /*card 1 starts here */
 .card{
+    display: none;
     height: 350px;
     width: 300px;
     background-color: #8d6885;;
@@ -100,24 +190,34 @@ body{
 
 /* card2 starts here */
 .card2{
-
-    height: 350px;
-    width: 300px;
-    background-color: #89806a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 30%;
+    background-color: #111;
     border-radius: 10px;
     position: absolute;
+    top: 9%;
     margin-left: 70%;
-    padding: 30px;
     text-align: center;
+    padding-left: 60px;
+    margin-right: 60px;
+
 
 }
 
 .card2 .image3{
-    height: 50%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 10px;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.card2 .image3 {
+    cursor: pointer;
 }
 
 .card2 .image4{
@@ -133,12 +233,18 @@ body{
 }
 
 
-.card2 h1{
-    font-size: 30px;
-    font-weight: 700;
+.card2 h6{
+    font-size: 29px;
+    font-weight: 200;
+    color: white;
     margin: 10px 0;
     position: relative;
     z-index: 9;
+    margin-right: 40%;
+}
+
+.card2 h6:hover {
+    cursor: pointer;
 }
 
 .card2 h5{
@@ -150,8 +256,8 @@ body{
 }
 
 .card2 button{
-    background-color: cadetblue;
-    color: #fff;
+    background-color: transparent;
+    color: blue;
     font-weight: 700;
     padding: 12px 12px;
     border-radius: 5px;
@@ -161,7 +267,133 @@ body{
     position: relative;
     z-index: 9;
 }
+
+.card2 button:hover {
+    color: white;
+}
 /* card2 ends here */
+
+/* card3 starts here */
+
+.card3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 30%;
+    background-color: #111;
+    border-radius: 10px;
+    position: absolute;
+    top: 17.5%;
+    margin-left: 70%;
+    text-align: center;
+    padding-left: 60px;
+    margin-right: 60px;
+
+
+}
+
+.card3 .image5{
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.card3 h6{
+    font-size: 29px;
+    font-weight: 200;
+    color: white;
+    margin: 10px 0;
+    position: relative;
+    z-index: 9;
+    margin-right: 40%;
+}
+
+.card3 button{
+    background-color: transparent;
+    color: blue;
+    font-weight: 700;
+    padding: 12px 12px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+}
+
+.card3 button:hover {
+    color: white;
+}
+
+
+
+/* card3 starts here */
+
+
+/* card4 starts here */
+
+.card4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 30%;
+    background-color: #111;
+    border-radius: 10px;
+    position: absolute;
+    top: 26%;
+    margin-left: 70%;
+    text-align: center;
+    padding-left: 60px;
+    margin-right: 60px;
+
+
+}
+
+.card4 .image6{
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.card4 h6{
+    font-size: 29px;
+    font-weight: 200;
+    color: white;
+    margin: 10px 0;
+    position: relative;
+    z-index: 9;
+    margin-right: 40%;
+}
+
+.card4 button{
+    background-color: transparent;
+    color: blue;
+    font-weight: 700;
+    padding: 12px 12px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+}
+
+.card4 button:hover {
+    color: white;
+}
+
+
+
+/* card3 ends here */
+
 
 
 /* container starts here */
@@ -170,6 +402,7 @@ h4{
     padding-left: 40px;
     padding-bottom: 14px;
     margin-left: 4px;
+    color: white;
 }
 
 .c1profile{
@@ -440,6 +673,10 @@ h4{
     object-position: center;
 }
 
+/* .story img:hover {
+    transform: scale(1.2);
+} */
+
 #full-screen{
     height: 100%;
     width: 100%;
@@ -454,16 +691,28 @@ h4{
 
 /* mobile view starts here */
 @media (max-width:600px) {
+    
     .cursor{
        display: none;
     }
     
+    .sidebar {
+        display: none ;
+    }
 
   .card{
     display: none;
   }
   
   .card2{
+    display: none;
+  }
+
+  .card3 {
+    display: none;
+  }
+
+  .card4 {
     display: none;
   }
 

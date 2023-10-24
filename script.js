@@ -32,24 +32,56 @@ btn.addEventListener("click", function(){
 
 
 //card 2 starts here
-var strange1=document.querySelector("#str1");
+// var strange1=document.querySelector("#str1");
 var btn1=document.querySelector("#add1");
 var flag1=0
 btn1.addEventListener("click", function(){
   if(flag1==0){
-    strange1.innerHTML="Friends"
-    strange1.style.color='green'
-    btn1.innerHTML="Remove Friend"
+    // strange1.innerHTML="Friends"
+    // strange1.style.color='green'
+    btn1.innerHTML="Following"
     flag1=1
   }else{
-    strange1.innerHTML="Strange"
-    strange1.style.color='red'
-    btn1.innerHTML="Add Friend"
+    // strange1.innerHTML="Strange"
+    // strange1.style.color='red'
+    btn1.innerHTML="Follow"
     flag1=0 
   }
   
 })
 //card 2 ends here
+
+
+// card 3 starts here
+var btn2=document.querySelector("#add2");
+var flag1=0
+btn2.addEventListener("click", function(){
+  if(flag1==0){
+    btn2.innerHTML="Following"
+    flag1=1
+  }else{
+    btn2.innerHTML="Follow"
+    flag1=0 
+  }
+  
+})
+//card 3 ends here
+
+// card 4 starts here
+var btn3=document.querySelector("#add3");
+var flag1=0
+btn3.addEventListener("click", function(){
+  if(flag1==0){
+    btn3.innerHTML="Following"
+    flag1=1
+  }else{
+    btn3.innerHTML="Follow"
+    flag1=0 
+  }
+  
+})
+//card 4 ends here
+
 
 
 //container starts here
@@ -138,24 +170,30 @@ l2.addEventListener("click",function(){
 })
 //container2 like btn ends here
 
+//card2 image hover starts here
+var elem1=document.querySelector(".image4");
+var elem2=document.querySelector(".card2 h6");
+var elemImage=document.querySelector(".card2 .image4");
 
-//card 2 image hover starts here
-var elem2 =document.querySelector(".card2");
-var elemImage2=document.querySelector(".card2 .image4");
-elem2.addEventListener("mousemove", function(a){
- 
-  elemImage2.style.right=a.x-1200+"px"
-  elemImage2.style.top=a.y+"px"
-  elemImage2.style.bottom=a.z-90+"px"
-
+elem1.addEventListener("mouseenter", function(){
+  elemImage.style.opacity=1
 })
+elem1.addEventListener("mouseleave", function(){
+  elemImage.style.opacity=0 
+})
+
 elem2.addEventListener("mouseenter", function(){
-  elemImage2.style.opacity=1
+  elemImage.style.opacity=1
 })
 elem2.addEventListener("mouseleave", function(){
-  elemImage2.style.opacity=0
+  elemImage.style.opacity=0 
 })
-//card 2 image hover ends here
+
+//card2 image hover ends here
+
+
+
+
 
 
 //container 3 starts here
@@ -204,6 +242,10 @@ var arr=[
   story: "https://images.unsplash.com/photo-1695747137192-fa5107a579dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1M3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" },
   {dp: "https://images.unsplash.com/photo-1695637453789-428d537b1ff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
   story: "https://images.unsplash.com/photo-1695637453789-428d537b1ff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" },
+  {dp: "https://images.unsplash.com/photo-1695637453789-428d537b1ff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+  story: "https://images.unsplash.com/photo-1695637453789-428d537b1ff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" },
+  {dp: "https://images.unsplash.com/photo-1695637453789-428d537b1ff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+  story: "https://images.unsplash.com/photo-1695637453789-428d537b1ff0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5MHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" }
 ]
 var pic=document.querySelector("#storiyan")
 var clutter=""
@@ -217,16 +259,36 @@ pic.addEventListener("click",function(a){
   document.querySelector("#full-screen").style.display="block";
   document.querySelector("#full-screen").style.
   backgroundImage=`url(${arr[a.target.id].story})`
+  document.querySelector(".sidebar").style.display="none";
+  document.querySelector(".card2").style.display="none";
+  document.querySelector(".card3").style.display="none";
+  document.querySelector(".card4").style.display="none";
   document.querySelector(".container").style.zIndex=0;
+  document.querySelector(".icon").style.display="none";
+  document.querySelector(".container2").style.display="none";
   document.querySelector(".wrapper").style.zIndex=0;
+  document.querySelector("#comment1").style.display="none";
+  document.querySelector("body").style.backgroundColor="#343434";
   setTimeout(() => {
     document.querySelector("#full-screen").style.display="none";
+    document.querySelector(".sidebar").style.display="inline";
+    document.querySelector(".card2").style.display="flex";
+    document.querySelector(".card3").style.display="flex";
+    document.querySelector(".card4").style.display="flex";
     document.querySelector(".container").style.zIndex=0;
+    document.querySelector(".icon").style.display="inline";
+    document.querySelector(".container2").style.display="inline";
     document.querySelector(".wrapper").style.zIndex=0;
+    document.querySelector("#comment1").style.display="inline";
+    document.querySelector("body").style.backgroundColor="#111";
+
   }, 3000);
   setTimeout(() => {
+    document.querySelector(".sidebar").style.display="inline";
     document.querySelector(".container").style.zIndex=1;
     document.querySelector(".wrapper").style.zIndex=1;
+    document.querySelector("body").style.backgroundColor="#111";
+
   }, 12000);
  
 });
