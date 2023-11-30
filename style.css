@@ -452,7 +452,7 @@ h4{
 /* container like btn starts here */
 .wrapper{
     position: absolute;
-    bottom: 105px;
+    bottom: 71px;
     left: 623px;
 }
 
@@ -526,7 +526,7 @@ h4{
 
 .wrapper2{
     position: absolute;
-    top: 153%;
+    top: 159%;
     left: 40.5%;
 }
 
@@ -602,7 +602,7 @@ h4{
    /* border: 2px solid black; */
     height: 10%;
     width: 34%;
-    top:236%;
+    top:242%;
 }
 
 .space{
@@ -639,12 +639,12 @@ h4{
     border-radius: 15px;
     overflow: hidden;
     position: absolute;
-    top: 1.5%;
+    top: -2.5%;
     
 }
 
 #storiyan{
-    height: 120px;
+    height: 114px;
     width: 100%;
     border-bottom: 1px solid #dadada;
     padding: 15px;
@@ -770,6 +770,29 @@ h4{
     padding: 15px;
     white-space: nowrap;
     overflow-x: auto;
+}
+
+.card2,.card3,.card4 {
+    display: none;
+}
+.card2 h6, .card3 h6, .card4 h6 {
+    display: none;
+}
+.card2 img, .card3 img, .card4 img {
+    display: none;
+}
+#add1,#add2,#add3 {
+    display: none;
+}
+.sidebar {
+    display: none;
+    border: none;
+}
+.sidebar .title {
+    display: none;
+}
+.sidebar ul {
+    display: none;
 }
 
 
